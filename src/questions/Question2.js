@@ -37,7 +37,7 @@ export default function Question2(props) {
         ref={searchTextInputRef}
       />
       {searchResults.map((item) => {
-        return <div>{item}</div>;
+        return <div key={item}>{item}</div>;
       })}
     </div>
   );

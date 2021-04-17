@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <div style={{ margin: 20 }}>
         {questions.map((question, index) => (
-          <button onClick={() => setCurrentQuestionIndex(index)}>
+          <button key={index} onClick={() => setCurrentQuestionIndex(index)}>
             {question}
           </button>
         ))}
